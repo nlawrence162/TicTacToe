@@ -47,6 +47,8 @@ int main()
 			c = 0;
 
 			switch ((c = _getch())) {
+			case 0:
+				break;
 			case SPACE:
 			case ENTER:
 				game.reStart();
@@ -59,9 +61,13 @@ int main()
 				break;
 			case 51:
 				D31 = true;
+				break;
 			case 100:
 				D32 = true;
+				break;
 			default:
+				D31 = false;
+				D32 = false;
 				break;
 			}
 		}
